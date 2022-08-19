@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- visit fonts.google.com to get these nce fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <title>Modal_2</title>
+    <style>
+        body{
+            background-image: url('images/madison&tuspark.JPG');
+        }
+        .modal{
+            position: fixed;
+            font-family: ;
+            border: 1px  solid black;
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            margin-top: 15%;
+            margin-left: 33%;
+            background-color: white;
+            box-shadow: 3px 3px 3px black;
+            transition-duration: 3s;
+            transition-property: left;
+            transition-timing-function: ease-in-out;
+
+
+            
+            display: none;
+
+        }
+        .co{
+             color: black;
+             font-family: 'Edu VIC WA NT Beginner', cursive;
+             background-color: white;
+             box-shadow: 1px 1px 1px black;
+             border-radius: 5px;
+
+        }
+        .cp{
+            color: white;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+            background-color: rgb(110, 110, 241);
+            box-shadow: 1px 1px 1px black;
+            border-radius: 5px;
+        }
+        .rt{
+           color: white;
+           font-family: 'Edu VIC WA NT Beginner', cursive;
+           font-size: larger;
+           margin-left: 35%;
+           margin-top: 25%;
+           width: 300px;
+           height: 50px;
+           background-color: rgb(49, 48, 48);
+
+           
+        }
+        div{
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="modal">
+        <h1> custom modal!</h1>
+        <p>Welcome to this crash course for javascript beginners</p>
+        <p>We are creating this modal using HTML,CSS,javascript</p>
+        <button class="co">Accept</button>
+        <button class="cp">close</button>
+    </div>
+
+    <div>
+    <button class="rt">open modal</button>
+    </div>
+   
+
+
+
+
+
+
+
+
+
+<script>
+class mode {
+    constructor () {
+     this.bam = document.querySelector(".modal")
+    }
+
+   open (){
+    this.bam.style.display='initial';
+ }
+ close () {
+    this.bam.style.display='none';
+ }
+
+
+
+
+}
+
+const rt = document.querySelector(".rt")
+var cp = document.querySelector(".cp");
+
+var click = new mode ()
+ rt.addEventListener('click', function (event) {
+    click.open();
+ }
+
+ );
+
+ const clicky = new mode ()
+ cp.addEventListener('click', function (event) {
+    clicky.close();
+ }
+ )
+
+
+</script>
+</body>
+</html>
